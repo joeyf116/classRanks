@@ -1,0 +1,5 @@
+get info from database
+for each topic return the rank
+update each html topic with value so radio button == checked
+
+

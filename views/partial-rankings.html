@@ -1,0 +1,14 @@
+        ${data.map(rankData => `
+                <ul class = "ul-wrapper">
+                        <p>${rankData.name}:</p>
+                        <li><input type="radio" value="5" ${(rankData.rank == 5) && ('checked')}>Awesome</li>
+                        <li><input type="radio" value="4" ${(rankData.rank == 4) && ('checked')}>Great</li>
+                        <li><input type="radio" value="3" ${(rankData.rank == 3) && ('checked')}>Good</li>
+                        <li><input type="radio" value="2" ${(rankData.rank == 2) && ('checked')}>Okay</li>
+                        <li><input type="radio" value="1" ${(rankData.rank == 1) && ('checked')}>Poor</li>
+                        <li><input type="radio" value="0" ${(rankData.rank == 0) && ('checked')}>Unranked</li>
+                    </ul></p></li>
+            `).join('') 
+            }
+        </ul>
+        <button type="button">Submit</button>
